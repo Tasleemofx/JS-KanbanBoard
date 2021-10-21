@@ -18,7 +18,7 @@ add_btn.addEventListener('click', () => {
 const create_item = (e) => {
   const item = document.createElement('div');
   item.classList.add('item');
-  item.setAttribute('id',"item-"+order);
+  item.setAttribute('id',"item-" + order);
   item.addEventListener('dragstart',e =>
     e.dataTransfer.setData('text',e.target.id))
     item.addEventListener('dragend', e=> e.dataTransfer.clearData())
